@@ -1,0 +1,24 @@
+// 키 바인딩을 이 파일에 넣어서 기본값을 덮어씁니다.
+[
+// 현재 라인 삭제
+{ "key": "ctrl+d",                "command": "editor.action.deleteLines",
+                                     "when": "editorTextFocus && !editorReadonly" },
+// 라인 이동
+{ "key": "alt+down",              "command": "editor.action.moveLinesDownAction",
+                                     "when": "editorTextFocus && !editorReadonly" },
+{ "key": "alt+up",                "command": "editor.action.moveLinesUpAction",
+                                     "when": "editorTextFocus && !editorReadonly" },
+// 라인 복사
+{ "key": "ctrl+alt+up",           "command": "editor.action.copyLinesUpAction",
+                                     "when": "editorTextFocus && !editorReadonly" },
+{ "key": "ctrl+alt+down",         "command": "editor.action.copyLinesDownAction",
+                                     "when": "editorTextFocus && !editorReadonly" },
+// 다중 라인 선택
+{ "key": "shift+alt+up",          "command": "editor.action.insertCursorAbove",
+                                     "when": "editorTextFocus" },
+{ "key": "shift+alt+down",        "command": "editor.action.insertCursorBelow",
+                                     "when": "editorTextFocus" },
+// 라인 끝에서 엔터
+{ "key": "shift+enter",            "command": "editor.action.insertLineAfter",
+                                     "when": "editorTextFocus && !editorReadonly" }
+]
